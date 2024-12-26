@@ -1,0 +1,15 @@
+Let's try a variation on the temperature converter.Let's try a variation on the temperature converter.
+Then the increment step fahr = fahr + 20 is executed, and the condition re-evaluated.Then the increment step fahr = fahr + 20 is executed, and the condition re-evaluated.
+As a specific example, on the UNIX operating system you must create the program in a file whose name ends in ``.c''
+Computation in the temperature conversion program begins with the assignment statements lower = 0; upper = 300; step = 20; which set the variables to their initial values
+#include <stdio.h> /* print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300 */ main() { int fahr, celsius; int lower, upper, step; lower = 0; /* lower limit of temperature scale */ upper = 300; /* upper limit */ step = 20; /* step size */ fahr = lower; while (fahr <= upper) { celsius = 5 * (fahr-32) / 9; printf("%d\t%d\n", fahr, celsius); fahr = fahr + step; } }
+To compile the C code "hello.c" on the Linux operating system, you can use the command "cc hello.c" in the terminal. This command invokes the C compiler to process the source code file "hello.c" and generate the executable output.
+The function main contains only one statement, printf("hello, world\n"); A function is called by naming it, followed by a parenthesized list of arguments, so this calls the function printf with the argument "hello, world\n"
+Our aim is to show the essential elements of the language in real programs, but without getting bogged down in details, rules, and exceptionS
+This approach and its drawbacks
+Modify the temperature conversion program to print the table in reverse order, that is, from 300 degrees to 0
+That is, after c = getchar(); the variable c contains the next character of input
+The statement ++nc; presents a new operator, ++, which means increment by one
+One of the nice things about while and for is that they test at the top of the loop, before proceeding with the body
+The switch statement, to be discussed in Chapter 4, provides another way to write a multi-way branch that is particulary suitable when the condition is whether some integer or character expression matches one of a set of constants
+When the name of an array is used as an argument, the value passed to the function is the location or address of the beginning of the array - there is no copying of array elements

@@ -1,0 +1,16 @@
+Let try variation temperature converter.Let try variation temperature converter 
+increment step fahr = fahr + 20 execute  condition re-evaluated.Then increment step fahr = fahr + 20 execute  condition reevaluated 
+specific example  UNIX operating system must file whose name end `` .c `` create program 
+Computation temperature conversion program begin assignment statement lower = 0 ; upper = 300 ; step = 20 ; initial values set variable 
+#include <stdio.h> /* print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300 */ main() { int fahr, celsius; int lower, upper, step; lower = 0; /* lower limit of temperature scale */ upper = 300; /* upper limit */ step = 20; /* step size */ fahr = lower; while (fahr <= upper) { celsius = 5 * (fahr-32) / 9; printf("%d\t%d\n", fahr, celsius); fahr = fahr + step; } }
+compile C code `` hello.c `` Linux operating system  `` cc hello.c `` terminal use command 
+command invokes C compiler code file `` hello.c `` process source executable output generate 
+function main contains one statement  printf ( `` hello  world\n `` ) ; function call name  follow list argument  call function printf argument `` hello  world\n `` 
+aim essential elements language real program  show without get details  rule  bogged exceptionS 
+approach drawback 
+Modify temperature conversion program reverse order   300 degree 0 print table 
+ c = getchar ( ) ; variable c character input contains next 
+statement ++nc ; present new operator  ++  one means increment 
+nice things One top loop  test body proceed 
+switch statement  discus Chapter 4  provide another way suitable write multi-way branch particular condition integer character expression one set constant match 
+array use name  value pass function location argument begin array - copying array elements address 

@@ -1,0 +1,40 @@
+.header
+{
+    background:#6900d1;
+}
+.navbar
+{
+    padding-top: 20px !important;
+}
+.nav-link
+{
+    color: white !important;
+    font-size: 16px !important;
+    padding: 0 0 5 0;
+    display: unset;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 1px solid #f06102; /* Simulate a typing cursor */
+    color: white;
+    /* Animation properties */
+    animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+}

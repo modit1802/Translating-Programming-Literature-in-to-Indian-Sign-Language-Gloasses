@@ -1,0 +1,100 @@
+Let us introduction C begin quick 
+aim essential elements language real program  show without get details  rule  bogged exception 
+point  complete try even precise ( save example ) meant correct 
+want get quickly possible point useful program  write basics : variable concentrate  arithmetic  control flow  function  constant input rudiments output 
+intentionally chapter feature C important write bigger program leave 
+pointer  structure  C rich set operator  several control-flow statement  include library standard 
+approach drawback 
+notable complete story particular feature  found tutorial  brief  may also mislead 
+example full power C  use concise elegant might 
+try  minimize effects warn 
+Another drawback later chapter necessarily chapter repeat 
+hope repetition help annoys 
+case  experienced programmer able chapter program need extrapolate material 
+Beginners supplement  similar program write small 
+group use framework hang detailed description 2 begin Chapter 
+1.1 Getting Started way program language write program learn new 
+first program write language : Print words hello  world big hurdle ; leap able create program text somewhere  compile successfully  load  run  find output go 
+details master  everything else comparatively easy mechanical 
+C  program print `` hello  world `` # include < stdio.h > main ( ) { printf ( `` hello  world\n `` ) ; } run program depends system use 
+specific example  UNIX operating system must file whose name end `` .c ``  create program hello.c  compile command cc hello.c  botch anything character omit misspell something  compilation silently  proceed executable file call a.out make 
+run a.out type command a.out print hello  world system  rule different ; check local expert 
+explanation program  
+C program  whatever size  function consists variable 
+function contains statement operations  specify compute variable store values computation use 
+function like subroutine C Fortran function procedure Pascal function 
+function name main example 
+Normally liberty give function whatever names like  `` main `` special - program execute begin main begin 
+every program must main somewhere means 
+main usually call function help perform job  write  library provide others 
+first line program  # include < stdio.h > tell compiler include information standard input/output library ; line appear begin many C source file 
+standard library Chapter 7 described B Appendix 
+One method communicate data function call function provide list values  call argument  function call 
+parenthesis function name argument list surround 
+example  main define function expect argument  ) indicate empty list ( 
+# include < stdio.h > include information standard library main ( ) define function call main receive argument values { statement main enclose braces printf ( `` hello  world\n `` ) ; main call library function printf print sequence character } \n represent newline character first C program statement function enclose braces { } 
+function main contains one statement  printf ( `` hello  world\n `` ) ; function call name  follow list argument  function printf argument `` hello  world\n `` call 
+library function print output  case string character quote printf 
+sequence character double quote  like `` hello  world\n ``  character string call constant string 
+use character strings moment printf argument function 
+\n string C notation newline character  sequence advance output left margin next line print 
+leave \n ( worthwhile experiment )  advance find line print output 
+must use \n include newline character printf argument ; try something like printf ( `` hello  world `` ) ; C compiler produce error message 
+printf never newline character automatically  supply several call may use output line stage build 
+program could first well write # include < stdio.h > main ( ) { printf ( `` hello  `` ) ; printf ( `` world `` ) ; printf ( `` \n `` ) ; } produce identical output 
+Notice represent single character \n 
+escape sequence like \n general provide mechanism represent hard-to-type extensive character invisible 
+Among others C provide \t tab  \b backspace  double quote \ `` backslash \\ 
+list Section 2.3 complete 
+Exercise 
+`` hello  world `` program system Run 
+Experiment leave parts program  see error message get 
+Exercise 
+Experiment find happens print argument contains \c  c character list string 
+Variables 1.2 Arithmetic Expressions next program use formula oC= ( ) ( oF-32 ) follow table Fahrenheit temperature print centigrade Celsius equivalent : 1 -17 20 -6 40 4 60 15 80 26 100 37 120 48 140 60 160 71 180 82 200 93 220 104 240 115 260 126 280 137 300 148 program still definition single function name main consists 
+longer one `` hello  world ``  print complicate 
+introduces several new idea   declaration  variable  arithmetic expression  loop  include comment output format 
+# include < stdio.h > / * print Fahrenheit-Celsius table fahr = 0  20   300 * / main ( ) { int fahr  celsius ; int lower  upper  step ; lower = 0 ; / limit temperature scale * / upper = 300 ; / * upper limit * / step = 20 ; / * step size * / fahr = lower ; * lower ( fahr < = upper ) { celsius = 5 * ( fahr-32 ) / 9 ; printf ( `` % d\t % d\n ``  fahr  celsius ) ; fahr = fahr + step ; } } two line / * print Fahrenheit-Celsius table fahr = 0  20   300 * / comment  case explains briefly program 
+/ * character * / ignore compiler ; may use freely make program easier understand 
+Comments may anywhere blank  tab appear newline 
+ variable must declare C  usually begin function use statement executable 
+declaration announces property variable ; consists name variable  list int fahr  celsius ; int lower  upper  step ; type int means variable list integer ; contrast float  i.e means float point  
+range int float depends machine use ; 16-bits ints  lie -32768  common  +32767 ints 
+number typically quantity  least six significant digit float generally magnitude 1038 
+C several data type besides int provide float  : char character - single byte short short integer long long integer double double-precision float point size object also machine-dependent include 
+array  structure also basic type  pointer  union function return  course meet due 
+Computation temperature conversion program begin assignment statement lower = 0 ; upper = 300 ; step = 20 ; initial values set variable 
+Individual statement semicolon terminate 
+line table way  compute loop repeat per output line ; purpose use loop fahr < = upper ) { ( 
+} operates loop : condition parenthesis test follow 
+true ( fahr le equal upper )  body loop ( three statement enclose braces ) execute 
+re- test  condition  body execute true 
+test false ( fahr exceeds upper ) loop end  becomes execution continue statement loop follow 
+program  statement terminates 
+body one enclose braces  statement converter  temperature statement without braces  single ( < j ) 2 * ; = case  always statement control indent one tab stop ( show space ) four glance statement inside loop see 
+indentation logical structure program emphasizes 
+C compiler program look  proper indentation care space critical make program easy people read 
+write one statement per line  recommend use blank around operator group clarify 
+position braces important  le people passionate belief hold 
+one several popular style chosen 
+Pick style suit  use consistently 
+get body loop work 
+temperature compute Celsius assign variable celsius statement celsius = 5 * ( fahr-32 ) ; reason multiply 5 / 9 divide 9 instead C  multiply many language  integer division truncates : fractional part discard 
+5 integer 9 
+would truncate zero temperature would report Celsius zero 
+example also bit printf works show 
+printf output format function  detail Chapter 7 describe 
+first argument string character print  % one ( second  third  ) argument substitute  indicate print form 
+instance  % integer argument  specifies statement printf ( `` % d\t % d\n ``  fahr  celsius ) ; values two integer fahr cause print  tab ( \t ) celsius 
+% construction first argument printf correspond second argument  third argument  etc pair 
+; must properly number match  type wrong answer get 
+ printf part C language ; input way define C output 
+useful function standard library function normally accessible C program printf 
+behaviour printf ANSI standard  however  define compiler property library standard conforms 
+order concentrate C  input talk much chapter 7 output 
+particular  format input defer 
+input numbers  function scanf Section 7.4 read discussion 
+scanf like printf  except input instead write output read 
+problem temperature conversion program couple 
+one output pretty simpler numbers 
+easy fix ; augment % printf statement width  numbers print fields 

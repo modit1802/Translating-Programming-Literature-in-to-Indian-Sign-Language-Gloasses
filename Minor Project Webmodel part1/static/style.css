@@ -1,0 +1,100 @@
+body
+{
+    background: url('13041.jpg') no-repeat center center fixed;
+    background-size: 50% auto;
+    background-position: right top;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value (0.5) to control the overlay opacity */
+    z-index: -1; /* Places it behind the content and the background image */
+  }
+
+.header
+{
+    background:#6900d1;
+}
+.navbar
+{
+    padding-top: 20px !important;
+}
+.nav-link
+{
+    color: white !important;
+    font-size: 16px !important;
+    padding: 0 0 5 0;
+    display: unset;
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 1px solid #f06102; /* Simulate a typing cursor */
+    color: white !important;
+    /* Animation properties */
+    animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+}
+
+.form-label
+{
+    color: #6900d1;
+    margin: 20px;
+}
+#btn
+{
+    background: #6900d1;
+    
+}
+
+.col
+{
+    color: #6900d1 !important;
+    font-size: medium;
+}
+.output
+{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+}
+.output:hover
+{
+    font-size: 20px;
+    color:#6900d1;
+    transition: linear;
+    transition-duration: 0.3s;
+    
+}
+.offcanvas-header
+{
+    color: #6900d1;
+}
+.clipboard:hover{
+    color: teal;
+    transition-duration: 2s;
+}
+.rules
+{
+    margin-right: 30px;
+}

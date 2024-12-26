@@ -1,0 +1,4 @@
+Variables: ['fahr', 'lower', 'upper', 'step', 'celsius', 'c', 'nc', 'nl', 'state', 'nwhite', 'i', 'digits', 'space', 'p', 'len', 'max']
+Data Types: ['int', 'float', 'double', 'char', 'void']
+User Defined Types: []
+Function Names: ['else', 'if', 'power', 'getline', 'copy']
